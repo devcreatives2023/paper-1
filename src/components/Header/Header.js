@@ -4,7 +4,7 @@ import { Waves } from "../../components";
 import { images, icons } from "../../contstants";
 const Header = () => {
   return (
-    <header className="h-[60vh] md:h-[30vh] xl:h-section lg:h-section">
+    <header className="h-[75vh] md:h-[30vh] xl:h-section lg:h-section">
       <Waves deg="360deg" />
       <div className="absolute  z-20 left-0 right-0">
         <div className=" xl:left-[340px] md:left-[140px] left-[20px] absolute top-10 font-bold flex shadow-xl text-white">

@@ -21,14 +21,14 @@ const Footer = () => {
             </button>
           </div>
 
-            <ul className="flex justify-center mt-5">
-              <li className=" text-[18px] xl:text-[24px] mx-2 cursor-pointer shadow-main rounded-[50%] p-4 bg-[#eee]">
+            <ul className="flex justify-center xl:mt-5 mt-2">
+              <li className=" text-[18px] xl:text-[24px] mx-2 cursor-pointer shadow-main rounded-[50%] p-4  text-purple bg-[#eee]">
                 <icons.BsInstagram />
               </li>
-              <li className=" text-[18px] xl:text-[24px] mx-2 cursor-pointer shadow-main rounded-[50%] p-4 bg-[#eee]">
+              <li className=" text-[18px] xl:text-[24px] mx-2 cursor-pointer shadow-main rounded-[50%] p-4 bg-[#eee]   text-purple">
                 <icons.MdOutlineSportsVolleyball />
               </li>
-              <li className="text-[18px] xl:text-[24px] mx-2 cursor-pointer shadow-main rounded-[50%] p-4 bg-[#eee]">
+              <li className="text-[18px] xl:text-[24px] mx-2 cursor-pointer shadow-main rounded-[50%] p-4 bg-[#eee]   text-purple">
                 <icons.BsBehance />
               </li>
             </ul>
