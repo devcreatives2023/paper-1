@@ -3,9 +3,9 @@ import { data } from "../../contstants";
 import { motion } from "framer-motion";
 const Services = () => {
   return (
-    <div className=" h-[95vh] md:h-[70vh] xl:h-section  lg:h-section">
-      <div className="flex  items-center justify-center">
-        <h1 className=" text-[25px] lg:text-[1rem]  xl:text-h1 font-title  tracking-wider ">
+    <div className=" h-[95vh] md:h-[70vh] xl:h-section lg:h-section">
+      <div className="flex  items-center justify-center ">
+        <h1 className=" text-[25px] lg:text-[1rem] xl:text-h1 font-title  tracking-wider">
           What We Do
           <div
             className="w-[60px] ml-[100px] 
