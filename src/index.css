@@ -1,6 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Barlow:wght@300;400&family=Nunito+Sans:wght@200;300&family=Raleway:ital,wght@0,200;0,400;1,600&family=Sriracha&family=Titillium+Web:ital,wght@0,200;1,300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Barlow:wght@300;400&family=Nunito+Sans:wght@200;300&family=Raleway:ital,wght@0,200;0,400;1,600&family=Sriracha&family=Titillium+Web:ital,wght@0,200;1,300&display=swap");
 
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+}
 
+::-webkit-scrollbar {
+  background-color: purple;
+  border-radius: 40px;
+  width: 5px;
+}
+
+::-webkit-scrollbar-button {
+  background-color: #eee;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+}

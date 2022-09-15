@@ -1,20 +1,33 @@
 import React from "react";
-import {  images } from "../../contstants";
+import { images } from "../../contstants";
+import { motion } from "framer-motion";
 const Works = () => {
   return (
     <div className="mt-[50px] pb-20 xl:pb-0 ">
-      <div className="flex flex-col justify-center items-center">
+      <motion.div
+        initial={{ y: -40, opacity: 0.6 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        exit={{ y: 0 }}
+        transition={{ duration: 2, type: "spring" }}
+        className="flex flex-col justify-center items-center"
+      >
         <h1 className="text-h1 capitalize font-title  tracking-wider ">
           Our Latest Works
         </h1>
         <div className="w-[60px] mt-2 ml-[10px] bg-lightpurple h-[1px]" />
-      </div>
+      </motion.div>
 
       <div
         className="mt-[10px] rounded-[20px] flex flex-col justify-center 
       items-center m-auto  "
       >
-        <div className="grid grid-cols-2 bg-work shadow  mt-10  rounded-[20px] justify-between  xl:w-[60%]">
+        <motion.div
+          initial={{ x: "20%", opacity: 0.6 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          exit={{ x: 0 }}
+          transition={{ duration: 3, type: "tween" }}
+          className="grid grid-cols-2 bg-work shadow  mt-10  rounded-[20px] justify-between  xl:w-[60%]"
+        >
           {/* first */}
           <div className="w grid-cols-1 flex flex-col justify-center items-center">
             <h1 className=" tracking-wider text-lg lg:text-h1 xl:text-h1 capitalize font-semibold  font-title">
@@ -28,9 +41,15 @@ const Works = () => {
           <div className="grid-cols-1">
             <img src={images.w1} className=" rounded-[20px]  object-cover " />
           </div>
-        </div>
+        </motion.div>
         {/* second */}
-        <div className="grid grid-cols-2 bg-work shadow  mt-10  rounded-[20px] justify-between  xl:w-[60%]">
+        <motion.div
+          initial={{ x: -10, opacity: 0.6 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          exit={{ x: 0 }}
+          transition={{ duration: 3, type: "spring" }}
+          className="grid grid-cols-2 bg-work shadow  mt-10  rounded-[20px] justify-between  xl:w-[60%]"
+        >
           <div className="  grid-cols-1">
             <img src={images.w3} className=" rounded-[20px]  object-cover " />
           </div>
@@ -43,9 +62,13 @@ const Works = () => {
               view project
             </button>
           </div>
-        </div>
+        </motion.div>
         {/* third */}
-        <div
+        <motion.div
+          initial={{ x:30, opacity: 0.6 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          exit={{ x: 0 }}
+          transition={{duration:3,type:"spring"}}
           className="grid grid-cols-2 bg-work shadow  mt-10
           rounded-[20px] justify-between  xl:w-[60%]"
         >
@@ -64,7 +87,7 @@ const Works = () => {
           <div className="  grid-cols-1">
             <img src={images.w2} className=" rounded-[20px]  object-cover " />
           </div>
-        </div>
+        </motion.div>
       </div>
     </div>
   );
