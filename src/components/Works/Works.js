@@ -3,7 +3,7 @@ import { images } from "../../contstants";
 import { motion } from "framer-motion";
 const Works = () => {
   return (
-    <div className="mt-[50px] pb-20 xl:pb-0 ">
+    <div className="mt-[50px] pb-20 xl:pb-0 p-2">
       <motion.div
         initial={{ y: -40, opacity: 0.6 }}
         whileInView={{ y: 0, opacity: 1 }}
@@ -11,7 +11,7 @@ const Works = () => {
         transition={{ duration: 2, type: "spring" }}
         className="flex flex-col justify-center items-center"
       >
-        <h1 className="text-h1 capitalize font-title  tracking-wider ">
+        <h1 className=" text-[25px] lg:text-[1rem] xl:text-h1 capitalize font-title  tracking-wider ">
           Our Latest Works
         </h1>
         <div className="w-[60px] mt-2 ml-[10px] bg-lightpurple h-[1px]" />
