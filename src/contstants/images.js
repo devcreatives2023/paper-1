@@ -14,8 +14,8 @@ import logo3 from "./images/logo/log3.png";
 import logo4 from "./images/logo/log4.png";
 // works
 import w1 from "./images/w1.jpg";
-import w2 from "./images/w2.png";
-import w3 from "./images/w3.png";
+import w2 from "./images/w2.jpg";
+import w3 from "./images/w3.jpg";
 
 export default {
   gh1,
@@ -34,3 +34,7 @@ export default {
   w2,
   w3,
 };
+
+
+
+

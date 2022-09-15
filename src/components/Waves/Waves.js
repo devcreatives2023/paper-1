@@ -3,7 +3,7 @@ import React from 'react'
 const Waves = ({deg}) => {
   return (
       <div className=" relative z-0">
-          <div className="  absolute z-3 top-0 left-0 right-0 " style={{rotate:deg}} >
+          <div className=" absolute z-3 top-0 left-0 right-0 " style={{rotate:deg}} >
         <svg
           width="100%"
           height="100%"
