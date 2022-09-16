@@ -3,7 +3,7 @@ import { data, icons} from "../../contstants";
 import { motion } from "framer-motion";
 const Projects = () => {
   return (
-    <div className="flex items-center justify-center md:mt-20">
+    <div className="flex items-center justify-center -mt-[90px] md:mt-20">
       <div className="grid lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 gap-10">
         {data.projects.map((item, index) => {
           return (
