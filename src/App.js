@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { Home } from "./pages";
+import { Blog, Contact, Home } from "./pages";
 import { RiseLoader } from "react-spinners";
 const App = () => {
   const [loading, setLoading] = React.useState(false);
@@ -30,6 +30,8 @@ const App = () => {
             <Routes>
               <Route path="/">
                 <Route index element={<Home />} />
+                <Route  path='blog' element={<Blog />}  />
+                <Route  path='contact' element={<Contact />}  />
               </Route>
             </Routes>
           </BrowserRouter>

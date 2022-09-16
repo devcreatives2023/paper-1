@@ -13,7 +13,7 @@ const Header = () => {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 0 }}
           transition={{ type: "spring", duration: 1, delay: "1" }}
-          className=" xl:left-[340px] md:left-[140px] left-[20px] absolute top-10 font-bold flex shadow-xl text-white"
+          className=" xl:left-[340px] md:left-[100px] left-[20px] absolute top-10 font-bold flex shadow-xl text-white"
         >
           TECHBOOM <icons.GiSonicBoom />
         </motion.div>
@@ -34,7 +34,7 @@ const Header = () => {
             transition={{ type: "spring", duration: 3, delay: "1.2" }}
             className=" hover:text-white shadow-xl text-lg"
           >
-            <Link to=""> Blog </Link>{" "}
+            <Link to="blog"> Blog </Link>{" "}
           </motion.li>
           <motion.li
             initial={{ y: -70, opacity: 0 }}
@@ -43,7 +43,7 @@ const Header = () => {
             transition={{ type: "spring", duration: 4, delay: "1.3" }}
             className=" hover:text-white shadow-xl text-lg"
           >
-            <Link to=""> Contact </Link>{" "}
+            <Link to="contact"> Contact </Link>{" "}
           </motion.li>
         </ul>
         <div className="mt-[110px] xl:mt-[150px] md:mt-[90px] text-center text-white p-4">
@@ -74,7 +74,7 @@ const Header = () => {
               boxShadow: "inset 0px 0px 1px 2px  white",
               background: "#7329ac",
             }}
-            className="xl:text-[22px] rounded-[30px] hover:bg-lightpurple bg-purple mt-[10px] xl:mt-16 
+            className="xl:text-[22px] rounded-[30px] hover:bg-lightpurple bg-purple mt-[10px] md:mt-[17px] xl:mt-16 
             px-[20px] xl:px-[75px] p-2 font-semibold  transition-all duration-[0.6s]"
             style={{ boxShadow: "inset 0px 0px 1px 2px  white" }}
           >
@@ -83,13 +83,14 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="absolute hidden xl:inline-block z-30 left-[30px]  top-[218px]">
+      <div className="absolute hidden xl:inline-block z-30 xl:left-[30px] -left-[10px] 
+       top-[218px]">
         <img src={images.gh1} />
       </div>
       <div
         className="absolute z-30 right-[110px]  visible sm:invisible  
-      md:invisible xl:visible lg:invisible   top-[260px] xl:top-[160px] w-[60%] 
-       xl:w-[15%] "
+        md:invisible xl:visible lg:invisible   top-[260px] xl:top-[160px] w-[60%] 
+         xl:w-[15%] "
       
       >
         <img src={images.gh2} />

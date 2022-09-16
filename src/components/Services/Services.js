@@ -14,7 +14,7 @@ const Services = () => {
         </h1>
       </div>
       <div className="flex  justify-center items-center">
-        <div className="grid  grid-cols-2 xl:grid-cols-3 lg:grid-cols-3  gap-3 xl:gap-10 mt-10 text-center">
+        <div className="grid grid-cols-2 xl:grid-cols-3 lg:grid-cols-3  gap-3 xl:gap-10 mt-10 text-center">
           {data.services.map((items, index) => {
             return (
               <motion.div
@@ -31,8 +31,8 @@ const Services = () => {
                     className="bg-white  border-2 rounded-[50%] p-1"
                   />
                 </div>
-                <h2 className=" font-semibold text-lg py-1">{items.name} </h2>
-                <p className="text-sm   text-[gray]">{items.text} </p>
+                <h2 className=" font-semibold text-lg py-1  ">{items.name} </h2>
+                <p className="text-sm   text-[gray] h-[50px]">{items.text} </p>
               </motion.div>
             );
           })}
