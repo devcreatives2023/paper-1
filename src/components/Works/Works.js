@@ -5,7 +5,7 @@ const Works = () => {
   return (
     <div className="mt-[50px]  pb-20 xl:pb-0 p-4">
       <motion.div
-        initial={{ y: -10, opacity: 0.6 }}
+        initial={{ y: -5, opacity: 0.6 }}
         whileInView={{ y: 0, opacity: 1 }}
         exit={{ y: 0 }}
         transition={{ duration: 2, type: "spring" }}
@@ -22,7 +22,7 @@ const Works = () => {
       items-center m-auto  "
       >
         <motion.div
-          initial={{ x: 10, opacity: 0.6 }}
+          initial={{ x: 5, opacity: 0.6 }}
           whileInView={{ x: 0, opacity: 1 }}
           exit={{ x: 0 }}
           transition={{ duration: 3, type: "tween" }}
@@ -44,7 +44,7 @@ const Works = () => {
         </motion.div>
         {/* second */}
         <motion.div
-          initial={{ x: -10, opacity: 0.6 }}
+          initial={{ x: -5, opacity: 0.6 }}
           whileInView={{ x: 0, opacity: 1 }}
           exit={{ x: 0 }}
           transition={{ duration: 3, type: "spring" }}

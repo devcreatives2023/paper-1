@@ -23,7 +23,7 @@ const Clients = () => {
           initial={{ x: -40, opacity: 0.6 }}
           whileInView={{ x: 0, opacity: 1 }}
           exit={{ x: 0 }}
-          transition={{ duration: 3, type: "spring" }}
+          transition={{ duration: 3, type: "tween" }}
           className="grid grid-rows-3 grid-cols-5  xl:w-[60%] p-4 gap-5 mt-10"
         >
           <div className="row-span-3  shadow-lg xl:mt-[80px] mt-[60%] bg-[#eee] h-[80px]  xl:h-[100px] lg:h-[100px] md:h-[90px]  flex items-center rounded-[20px] ">
