@@ -9,9 +9,9 @@ const Clients = () => {
         initial={{ y: 100, opacity: 0.6 }}
         whileInView={{ y: 0, opacity: 1 }}
         exit={{ y: 0 }}
-        transition={{ duration: 2, type: "spring" }} >
+        transition={{ duration: 1, type: "tween" }} >
 
-        <h1 className="text-[25px] lg:text-[1rem] xl:text-h1 font-title  tracking-wider ">Clients</h1>
+        <h1 className="text-[25px] lg:text-[2rem] xl:text-h1 font-title  tracking-wider ">Clients</h1>
         <p className=" tracking-wide text-sm xl:text-lg  mt-3">
           Leo vel fringilla est ullamcorper. Tincidunt eget nullam non nisi.
         </p>

@@ -5,10 +5,10 @@ const Services = () => {
   return (
     <div className=" h-[95vh] md:h-[70vh] xl:h-section lg:h-section">
       <div className="flex  items-center justify-center ">
-        <h1 className=" text-[25px] lg:text-[1rem] xl:text-h1 font-title  tracking-wider">
+        <h1 className=" text-[25px] lg:text-[2rem]  xl:text-h1 font-title  tracking-wider">
           What We Do
           <div
-            className="w-[60px] ml-[100px] 
+            className="w-[40px] lg:ml-[40px] xl:w-[60px] xl:ml-[100px] 
           bg-lightpurple h-[1px]"
           />
         </h1>

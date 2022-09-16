@@ -41,7 +41,6 @@ const Header = () => {
             animate={{ y: 0, opacity: 1 }}
             exit={{ y: 0 }}
             transition={{ type: "spring", duration: 4, delay: "1.3" }}
-
             className=" hover:text-white shadow-xl text-lg"
           >
             <Link to=""> Contact </Link>{" "}
@@ -50,7 +49,9 @@ const Header = () => {
         <div className="mt-[110px] xl:mt-[150px] md:mt-[90px] text-center text-white p-4">
           <h1
             style={{ textShadow: "1px 3px 3px gray" }}
-            className=" text-[2rem] xl:text-xl text-black lg:text-white md:text-white xl:text-white tracking-wide 
+            className=" text-[2rem] xl:text-xl
+            lg:text-[3rem]
+            text-black lg:text-white md:text-white xl:text-white tracking-wide 
             font-bold capitalize  flex items-center justify-center font-title"
           >
             We Are Techboom
@@ -60,9 +61,19 @@ const Header = () => {
             is het “Lorum Ipsem”.
           </p>
           <motion.button
-          initial={{boxShadow: "inset 0px 0px 1px 2px  white",background:"#7329ac"}}
-          whileHover={{boxShadow:"inset 2px 4px 5px gray" ,background:"#eee",color:"black"}}
-          exit={{boxShadow: "inset 0px 0px 1px 2px  white",background:"#7329ac"}}
+            initial={{
+              boxShadow: "inset 0px 0px 1px 2px  white",
+              background: "#7329ac",
+            }}
+            whileHover={{
+              boxShadow: "inset 2px 4px 5px gray",
+              background: "#eee",
+              color: "black",
+            }}
+            exit={{
+              boxShadow: "inset 0px 0px 1px 2px  white",
+              background: "#7329ac",
+            }}
             className="xl:text-[22px] rounded-[30px] hover:bg-lightpurple bg-purple mt-[10px] xl:mt-16 
             px-[20px] xl:px-[75px] p-2 font-semibold  transition-all duration-[0.6s]"
             style={{ boxShadow: "inset 0px 0px 1px 2px  white" }}
@@ -75,7 +86,12 @@ const Header = () => {
       <div className="absolute hidden xl:inline-block z-30 left-[30px]  top-[218px]">
         <img src={images.gh1} />
       </div>
-      <div className="absolute z-30 right-[110px]  visible sm:invisible lg:invisible md:invisible xl:visible lg:visible   top-[260px] xl:top-[160px] w-[60%]  xl:w-[15%]">
+      <div
+        className="absolute z-30 right-[110px]  visible sm:invisible  
+      md:invisible xl:visible lg:invisible   top-[260px] xl:top-[160px] w-[60%] 
+       xl:w-[15%] "
+      
+      >
         <img src={images.gh2} />
       </div>
     </header>
