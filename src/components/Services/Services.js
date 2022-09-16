@@ -31,7 +31,7 @@ const Services = () => {
                     className="bg-white  border-2 rounded-[50%] p-1"
                   />
                 </div>
-                <h2 className=" font-semibold text-lg py-1  ">{items.name} </h2>
+                <h2 className=" font-semibold text-lg py-1">{items.name} </h2>
                 <p className="text-sm   text-[gray] h-[50px]">{items.text} </p>
               </motion.div>
             );

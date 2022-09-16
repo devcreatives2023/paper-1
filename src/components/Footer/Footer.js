@@ -26,12 +26,13 @@ const Footer = () => {
              initial={{boxShadow: "inset 0px 0px 1px 2px  white",background:"#7329ac"}}
              whileHover={{boxShadow:"inset 2px 4px 5px gray" ,background:"#eee",color:"black"}}
              exit={{boxShadow: "inset 0px 0px 1px 2px  white",background:"#7329ac"}}
-            className=" bg-purple hover:bg-lightpurple transition-[0.6s] shadow-secondary shadow-white text-white text-center px-10 p-2 xl:px-20 rounded-[20px] xl:p-3 mt-6 ">
+            className=" bg-purple hover:bg-lightpurple transition-[0.6s] shadow-secondary shadow-white text-white text-center px-10 p-2 xl:px-20
+             rounded-[20px] xl:p-3 xl:mt-6 m-2 mt-4 md:mt-1 ">
               Lets Talk
             </motion.button>
           </div>
 
-          <ul className="flex justify-center xl:mt-5 mt-2">
+          <ul className="flex justify-center xl:mt-5 mt-2 m-4 ">
             <li className=" text-[18px] xl:text-[24px] mx-2 cursor-pointer shadow-main rounded-[50%] p-4  text-purple bg-[#eee]">
               <icons.BsInstagram />
             </li>
