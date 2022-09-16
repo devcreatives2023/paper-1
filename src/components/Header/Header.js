@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { images, icons } from "../../contstants";
 const Header = ({ title, text, btn }) => {
   return (
-    <header className="h-[75vh] md:h-[40vh] xl:h-section lg:h-section">
+    <header className="h-[45vh] md:h-[40vh] xl:h-section lg:h-section">
       <Waves deg="360deg" />
       <div className="absolute  z-20 left-0 right-0">
         <motion.div
@@ -46,7 +46,8 @@ const Header = ({ title, text, btn }) => {
             <Link to="contact"> Contact </Link>
           </motion.li>
         </ul>
-        <div className="mt-[110px] xl:mt-[150px] md:mt-[90px] text-center text-white p-4">
+        <div className="mt-[130px] xl:mt-[150px] lg:mt-[150px]  md:mt-[90px] text-center
+         text-white p-4">
           <h1
             style={{ textShadow: "1px 3px 3px gray" }}
             className=" text-[2rem] xl:text-xl
@@ -98,8 +99,8 @@ const Header = ({ title, text, btn }) => {
         <img src={images.gh1}  className='w-[340px] lg:inline-block '/>
       </div>
       <div
-        className="absolute z-30 right-[40px] hidden sm:invisible  
-        md:invisible xl:visible lg:visible top-[260px] xl:top-[160px] w-[60%] 
+        className="absolute z-30 right-[40px] hidden sm:hidden  
+        md:hidden xl:inline-block lg:inline-block top-[260px] xl:top-[160px] w-[60%] 
         xl:right-[70px]
          xl:w-[15%] 
          lg:w-[200px]
