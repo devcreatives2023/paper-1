@@ -92,17 +92,22 @@ const Header = ({ title, text, btn }) => {
       </div>
 
       <div
-        className="absolute hidden xl:inline-block z-30 xl:left-[30px] -left-[10px] 
-       top-[218px]"
+        className="absolute hidden lg:inline-block  xl:inline-block z-30 xl:left-[30px] -left-[10px] 
+       top-[218px] xl:top-[218px] lg:top-[91px] lg:left-[50px]"
       >
-        <img src={images.gh1} />
+        <img src={images.gh1}  className='w-[340px] lg:inline-block '/>
       </div>
       <div
-        className="absolute z-30 right-[80px] visible sm:invisible  
-        md:invisible xl:visible lg:invisible  top-[260px] xl:top-[160px] w-[60%] 
-         xl:w-[15%] "
+        className="absolute z-30 right-[40px] visible sm:invisible  
+        md:invisible xl:visible lg:visible top-[260px] xl:top-[160px] w-[60%] 
+        xl:right-[70px]
+         xl:w-[15%] 
+         lg:w-[200px]
+         lg:top-[100px]
+         lg:right-[120px]
+         "
       >
-        <img src={images.gh2} />
+        <img src={images.gh2}   className='w-[340px] lg:inline-block lg:rotate-[7deg] ' />
       </div>
     </header>
 

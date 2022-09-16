@@ -1,15 +1,15 @@
 import React from "react";
-import { data, images } from "../../contstants";
+import { data, icons} from "../../contstants";
 import { motion } from "framer-motion";
 const Projects = () => {
   return (
-    <div className="flex items-center justify-center">
-      <div className="grid grid-cols-3 gap-10">
+    <div className="flex items-center justify-center md:mt-20">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 xl:grid-cols-3 gap-10">
         {data.projects.map((item, index) => {
           return (
             <div
               key={index}
-              className=" rounded-[30px]  w-[330px] h-[380px] border shadow  overflow-hidden "
+              className=" rounded-[30px]   w-[330px] h-[380px] border shadow  overflow-hidden "
             >
               <div className=" overflow-hidden">
                 <motion.img
@@ -34,6 +34,9 @@ const Projects = () => {
                     <h5 className=" font-semibold text-lg">{item.devname}</h5>
                     <p className="text-[gray] text-sm"> {item.date}</p>
                   </div>
+                  <div className="col-span-1 mt-5 flex justify-center items-center  w-[35px] h-[35px] shadow-main rounded-[50%] p-1 bg-white" >
+<icons.FcAddImage />
+                     </div>
                 </div>
               </div>
             </div>

@@ -35,7 +35,7 @@ const data = {
   projects: [
     {
       id: 1,
-      img: images.gh2,
+      img: images.w2 ,
       name: "Movie ticket app case",
       developerimg: images.w3,
       devname: "Omer Ali",
@@ -43,7 +43,7 @@ const data = {
     },
     {
       id: 2,
-      img: images.gh2,
+      img: images.w3 ,
       name: "Movie ticket app case",
       developerimg: images.w3,
       devname: "Omer Ali",
@@ -51,7 +51,23 @@ const data = {
     },
     {
       id: 3,
-      img: images.gh2,
+      img: images.w2 ,
+      name: "Movie ticket app case",
+      developerimg: images.w3,
+      devname: "Omer Ali",
+      date: "October 31 2020",
+    },
+    {
+      id: 7,
+      img: images.w2 ,
+      name: "Movie ticket app case",
+      developerimg: images.w3,
+      devname: "Omer Ali",
+      date: "October 31 2020",
+    },
+    {
+      id: 8,
+      img: images.w2 ,
       name: "Movie ticket app case",
       developerimg: images.w3,
       devname: "Omer Ali",
@@ -59,7 +75,7 @@ const data = {
     },
     {
       id: 4,
-      img: images.gh2,
+      img: images.w3 ,
       name: "Movie ticket app case",
       developerimg: images.w3,
       devname: "Omer Ali",
@@ -67,7 +83,7 @@ const data = {
     },
     {
       id: 5,
-      img: images.gh2,
+      img: images.w1 ,
       name: "Movie ticket app case",
       developerimg: images.w3,
       devname: "Omer Ali",
@@ -75,7 +91,7 @@ const data = {
     },
     {
       id: 6,
-      img: images.gh2,
+      img: images.w2,
       name: "Movie ticket app case",
       developerimg: images.w3,
       devname: "Omer Ali",

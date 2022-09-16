@@ -26,7 +26,7 @@ const Works = () => {
           whileInView={{ x: 0, opacity: 1 }}
           exit={{ x: 0 }}
           transition={{ duration: 3, type: "tween" }}
-          className="grid grid-cols-2 bg-work shadow  mt-10  rounded-[20px] justify-between  xl:w-[60%]"
+          className="grid grid-cols-2 bg-work shadow mt-10  rounded-[20px] justify-between  xl:w-[60%]"
         >
           {/* first */}
           <div className="w grid-cols-1 flex flex-col justify-center items-center">
