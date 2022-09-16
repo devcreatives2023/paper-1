@@ -12,8 +12,8 @@ const Services = () => {
 
         </h1>
       </div>
-      <div className="flex  justify-center items-center">
-        <div className="grid grid-cols-2 xl:grid-cols-3 lg:grid-cols-3  gap-3 xl:gap-10 mt-10 text-center">
+      <div className="flex  justify-center items-center ">
+        <div className="grid grid-cols-2 xl:grid-cols-3  lg:grid-cols-3  gap-3 xl:gap-10 mt-10 text-center">
           {data.services.map((items, index) => {
             return (
               <motion.div
@@ -22,7 +22,7 @@ const Services = () => {
                 exit={{ x: 0 }}
                 transition={{duration:3,type:"spring"}}
                 key={index}
-                className=" xl:w-[250px] lg:w-[250px]  flex flex-col justify-between items-center"
+                className=" xl:w-[250px] lg:w-[250px]  flex flex-col justify-between items-center mt-10 "
               >
                 <div className="w-[80px] flex shadow-main items-center justify-center  rounded-[50%] p-4 bg-[#eee]">
                   <img
@@ -31,7 +31,7 @@ const Services = () => {
                   />
                 </div>
                 <h2 className=" font-semibold text-lg py-1">{items.name} </h2>
-                <p className="text-sm   text-[gray] h-[50px]">{items.text} </p>
+                <p className="text-sm text-[gray] h-[50px]">{items.text} </p>
               </motion.div>
             );
           })}

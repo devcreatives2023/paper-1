@@ -98,16 +98,17 @@ const Header = ({ title, text, btn }) => {
         <img src={images.gh1}  className='w-[340px] lg:inline-block '/>
       </div>
       <div
-        className="absolute z-30 right-[40px] visible sm:invisible  
+        className="absolute z-30 right-[40px] hidden sm:invisible  
         md:invisible xl:visible lg:visible top-[260px] xl:top-[160px] w-[60%] 
         xl:right-[70px]
          xl:w-[15%] 
          lg:w-[200px]
          lg:top-[100px]
          lg:right-[120px]
+         
          "
       >
-        <img src={images.gh2}   className='w-[340px] lg:inline-block lg:rotate-[7deg] ' />
+        <img src={images.gh2}   className='w-[340px] lg:inline-block lg:rotate-[7deg]  ' />
       </div>
     </header>
 
