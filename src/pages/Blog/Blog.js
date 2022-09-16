@@ -1,9 +1,15 @@
-import React from 'react'
+import React from "react";
+import { Footer, Header, Projects } from "../../components";
 
 const Blog = () => {
   return (
-    <div>Blog</div>
-  )
-}
+    <div>
+      <Header title="Our Design journal" 
+      />
+      <Projects />
+      <Footer />
+    </div>
+  );
+};
 
-export default Blog
+export default Blog;

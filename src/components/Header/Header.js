@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { Waves } from "../../components";
 import { motion } from "framer-motion";
 import { images, icons } from "../../contstants";
-const Header = () => {
+const Header = ({ title, text, btn }) => {
   return (
     <header className="h-[75vh] md:h-[40vh] xl:h-section lg:h-section">
       <Waves deg="360deg" />
@@ -25,7 +25,7 @@ const Header = () => {
             transition={{ type: "spring", duration: 2, delay: "1" }}
             className=" hover:text-white shadow-xl text-lg"
           >
-            <Link to="/"> Home </Link>{" "}
+            <Link to="/"> Home </Link>
           </motion.li>
           <motion.li
             initial={{ y: -70, opacity: 0 }}
@@ -34,7 +34,7 @@ const Header = () => {
             transition={{ type: "spring", duration: 3, delay: "1.2" }}
             className=" hover:text-white shadow-xl text-lg"
           >
-            <Link to="blog"> Blog </Link>{" "}
+            <Link to="blog"> Blog </Link>
           </motion.li>
           <motion.li
             initial={{ y: -70, opacity: 0 }}
@@ -43,7 +43,7 @@ const Header = () => {
             transition={{ type: "spring", duration: 4, delay: "1.3" }}
             className=" hover:text-white shadow-xl text-lg"
           >
-            <Link to="contact"> Contact </Link>{" "}
+            <Link to="contact"> Contact </Link>
           </motion.li>
         </ul>
         <div className="mt-[110px] xl:mt-[150px] md:mt-[90px] text-center text-white p-4">
@@ -54,49 +54,59 @@ const Header = () => {
             text-black lg:text-white md:text-white xl:text-white tracking-wide 
             font-bold capitalize  flex items-center justify-center font-title"
           >
-            We Are Techboom
+            {title}
           </h1>
-          <p className=" text-purple text-sm xl:text-lg">
-            Of is het nu Lorum Ipsem, Lorum Ipsom, Lorem Ipsom? Nee, officieel
-            is het “Lorum Ipsem”.
-          </p>
-          <motion.button
-            initial={{
-              boxShadow: "inset 0px 0px 1px 2px  white",
-              background: "#7329ac",
-            }}
-            whileHover={{
-              boxShadow: "inset 2px 4px 5px gray",
-              background: "#eee",
-              color: "black",
-            }}
-            exit={{
-              boxShadow: "inset 0px 0px 1px 2px  white",
-              background: "#7329ac",
-            }}
-            className="xl:text-[22px] rounded-[30px] hover:bg-lightpurple bg-purple mt-[10px] md:mt-[17px] xl:mt-16 
+          {text ? (
+            <p className=" text-purple text-sm xl:text-lg">
+              Of is het nu Lorum Ipsem, Lorum Ipsom, Lorem Ipsom? Nee, officieel
+              is het “Lorum Ipsem”.
+            </p>
+          ) : (
+            ""
+          )}
+          {btn ? (
+            <motion.button
+              initial={{
+                boxShadow: "inset 0px 0px 1px 2px  white",
+                background: "#7329ac",
+              }}
+              whileHover={{
+                boxShadow: "inset 2px 4px 5px gray",
+                background: "#eee",
+                color: "black",
+              }}
+              exit={{
+                boxShadow: "inset 0px 0px 1px 2px  white",
+                background: "#7329ac",
+              }}
+              className="xl:text-[22px] rounded-[30px] hover:bg-lightpurple bg-purple mt-[10px] md:mt-[17px] xl:mt-16 
             px-[20px] xl:px-[75px] p-2 font-semibold  transition-all duration-[0.6s]"
-            style={{ boxShadow: "inset 0px 0px 1px 2px  white" }}
-          >
-            Let's Talk
-          </motion.button>
+              style={{ boxShadow: "inset 0px 0px 1px 2px  white" }}
+            >
+              Let's Talk
+            </motion.button>
+          ) : (
+            ""
+          )}
         </div>
       </div>
 
-      <div className="absolute hidden xl:inline-block z-30 xl:left-[30px] -left-[10px] 
-       top-[218px]">
+      <div
+        className="absolute hidden xl:inline-block z-30 xl:left-[30px] -left-[10px] 
+       top-[218px]"
+      >
         <img src={images.gh1} />
       </div>
       <div
-        className="absolute z-30 right-[110px]  visible sm:invisible  
-        md:invisible xl:visible lg:invisible   top-[260px] xl:top-[160px] w-[60%] 
+        className="absolute z-30 right-[80px] visible sm:invisible  
+        md:invisible xl:visible lg:invisible  top-[260px] xl:top-[160px] w-[60%] 
          xl:w-[15%] "
-      
       >
         <img src={images.gh2} />
       </div>
     </header>
-  );
+
+);
 };
 
 export default Header;

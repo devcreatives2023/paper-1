@@ -7,10 +7,9 @@ const Services = () => {
       <div className="flex  items-center justify-center ">
         <h1 className=" text-[25px] lg:text-[2rem]  xl:text-h1 font-title  tracking-wider">
           What We Do
-          <div
-            className="w-[40px] lg:ml-[40px] xl:w-[60px] xl:ml-[100px] 
-          bg-lightpurple h-[1px]"
-          />
+          <div className="w-[60px] mt-2 ml-[30%]  lg:ml-[40%] xl:ml-[40%] bg-lightpurple h-[1px] md:ml-[40px] ">
+          </div>
+
         </h1>
       </div>
       <div className="flex  justify-center items-center">

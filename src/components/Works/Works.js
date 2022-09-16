@@ -18,7 +18,7 @@ const Works = () => {
       </motion.div>
 
       <div
-        className="mt-[10px] rounded-[20px] flex flex-col justify-center 
+        className="mt-[10px] rounded-[20px] flex flex-col justfy-center 
       items-center m-auto  "
       >
         <motion.div
@@ -34,7 +34,8 @@ const Works = () => {
               Lorem Ipsum
             </h1>
             <h3 className=" capitalize mt-5"> Development</h3>
-            <button className=" font-semibold rounded-[20px] shadow-secondary  bg-white p-2 xl:p-3 xl:px-10 mt-4">
+            <button className=" font-semibold rounded-[20px] shadow-secondary 
+             bg-white p-2 xl:p-3 xl:px-10 mt-5">
               view project
             </button>
           </div>
@@ -58,7 +59,7 @@ const Works = () => {
               Lorem Ipsum
             </h1>
             <h3 className=" capitalize mt-5"> Development</h3>
-            <button className=" font-semibold rounded-[20px] shadow-secondary  bg-white  p-2 xl:p-3 xl:px-10 mt-4">
+            <button className=" font-semibold rounded-[20px] shadow-secondary  bg-white  p-2 xl:p-3 xl:px-10 mt-5">
               view project
             </button>
           </div>
@@ -79,7 +80,7 @@ const Works = () => {
             <h3 className=" capitalize mt-5"> Development</h3>
             <button
               className=" font-semibold rounded-[20px] shadow-secondary
-              bg-white xl:p-3 p-2 x:px-10 mt-4"
+              bg-white xl:p-3 p-2 x:px-10 mt-5"
             >
               view project
             </button>
