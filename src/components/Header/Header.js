@@ -17,7 +17,7 @@ const Header = ({ title, text, btn }) => {
         >
           TECHBOOM <icons.GiSonicBoom />
         </motion.div>
-        <ul className="grid xl:grid-cols-3 grid-cols-3 text-[#eee] absolute top-[35px] xl:top-12 right-5 xl:right-[350px] gap-2 xl:gap-6">
+        <ul className="grid xl:grid-cols-3  text-center grid-cols-3 text-[#eee] absolute top-[35px] xl:top-12 right-5 xl:right-[350px] gap-2 xl:gap-6">
           <motion.li
             initial={{ y: -70, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}

@@ -1,28 +1,45 @@
 import React from "react";
 import { data, images } from "../../contstants";
+import { motion } from "framer-motion";
 const Projects = () => {
   return (
-    <div className="p-[2rem]">
-      {/* {data.projects.map((item,index)=>{key={index}
-return ( */}
-      <div className=" rounded-[30px] w-[350px] border shadow bg-[#eee] ">
-        <img src={images.w1} className=' h-[220px] object-cover w-screen'/>
-        <div className="p-[1rem]">
-          <h3 className=" font-semibold text-lg">Movie ticket app case </h3>
-          <div className="grid grid-cols-5 mt-2">
-        <div className=" col-span-1"><img src={images.w2}  className=' rounded-[50%] w-[57px] h-[57px]
-            '/>  </div>
-            <div className=" col-span-3 mt-2">
-              <h5 className=" font-semibold ">ALi</h5>
-              <p> May 19 2020</p>
+    <div className="flex items-center justify-center">
+      <div className="grid grid-cols-3 gap-10">
+        {data.projects.map((item, index) => {
+          return (
+            <div
+              key={index}
+              className=" rounded-[30px]  w-[330px] h-[380px] border shadow  overflow-hidden "
+            >
+              <div className=" overflow-hidden">
+                <motion.img
+                  src={item.img}
+                  className="rounded-t-lg h-[220px] cursor-pointer object-cover w-screen"
+                  inital={{ scale: 1.1 }}
+                  whileHover={{ scale: 1.1, rotate: "2deg" }}
+                  transition={{ duration: 2, type: "spring" }}
+                />
+              </div>
+              <div className="p-[1rem] cursor-pointer">
+                <h3 className=" font-semibold text-lg">{item.name}</h3>
+                <div className="grid grid-cols-5 mt-2 gap-3">
+                  <div className=" col-span-1">
+                    <img
+                      src={item.developerimg}
+                      className=" rounded-[50%] w-[57px] h-[57px]
+            "
+                    />
+                  </div>
+                  <div className=" col-span-3 mt-2">
+                    <h5 className=" font-semibold text-lg">{item.devname}</h5>
+                    <p className="text-[gray] text-sm"> {item.date}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
+          );
+        })}
       </div>
-      {/* )
-
-
-})} */}
     </div>
   );
 };
