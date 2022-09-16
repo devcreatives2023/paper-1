@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { images, icons } from "../../contstants";
 const Header = ({ title, text, btn }) => {
   return (
-    <header className="h-[45vh] md:h-[40vh] xl:h-section lg:h-section">
+    <header className="h-[42vh] md:h-[40vh] xl:h-section lg:h-section">
       <Waves deg="360deg" />
       <div className="absolute  z-20 left-0 right-0">
         <motion.div
