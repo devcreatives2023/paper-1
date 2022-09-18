@@ -53,15 +53,17 @@ const {openModel,model}=React.useContext(ContextProvider)
         </ul>
         
         <div
-          className="mt-[130px] xl:mt-[150px] lg:mt-[150px]  md:mt-[90px] text-center
+          className="mt-[130px] xl:mt-[150px] lg:mt-[150px] 
+           md:mt-[90px] text-center
          text-white p-4"
         >
           <h1
             style={{ textShadow: "1px 3px 3px gray" }}
             className=" text-[2rem] xl:text-xl
             lg:text-[3rem]
-            text-black lg:text-white md:text-white xl:text-white tracking-wide 
-            font-bold capitalize  flex items-center justify-center font-title"
+            text-black lg:text-white md:text-white xl:text-white  
+            font-bold capitalize  flex items-center justify-center font-title 
+            tracking-wider xl:tracking-widest "
           >
             {title}
           </h1>
@@ -101,15 +103,15 @@ const {openModel,model}=React.useContext(ContextProvider)
       </div>
 
       <div
-        className="absolute hidden lg:hidden  xl:inline-block z-30 xl:left-[30px] -left-[10px] 
+        className="absolute hidden lg:hidde n  xl:inline-block z-30 xl:left-[0px]  
        top-[218px] xl:top-[218px] lg:top-[91px] lg:left-[50px]"
       >
-        <img src={images.gh1} className="w-[340px] lg:inline-block lg:w-[80%] xl:w-[350px] " />
+        <img src={images.gh1} className="w-[340px] lg:inline-block lg:w-[80%] xl:w-[250px] " />
       </div>
       <div
-        className="absolute z-30 right-[40px] hidden sm:hidden  
+        className="absolute z-30  hidden sm:hidden  
         md:hidden xl:inline-block lg:hidden top-[260px] xl:top-[160px] w-[60%] 
-        xl:right-[70px]
+        xl:right-[-19px]
          xl:w-[15%] 
          lg:w-[200px]
          lg:top-[100px]

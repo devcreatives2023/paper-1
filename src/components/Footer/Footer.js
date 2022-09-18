@@ -4,15 +4,15 @@ import { icons } from "../../contstants";
 import { motion } from "framer-motion";
 const Footer = () => {
   return (
-    <div className=" relative z-0">
-      <div className="realtive ">
+    <div className=" relative z-0 bottom-0">
+      <div className="realtive bottom-0 ">
         <Waves deg="180deg" />
       </div>
-      <div className="  flex justify-center left-0 right-0 xl:top-[300px] items-center xl:mt-10 md:top-[150px] absolute">
+      <div className="flex justify-center left-0 right-0 xl:top-[200px] items-center xl:mt-10 md:top-[150px] absolute">
         <div className=" absolute top-0">
           <motion.h1
             style={{ textShadow: "1px 3px 3px gray" }}
-            initial={{ y: 40, opacity: 0.6 }}
+            initial={{ y: -60, opacity: 0.6 }}
             whileInView={{ y: 0, opacity: 1 }}
             exit={{ y: 0 }}
             transition={{duration:3,type:"spring"}}
