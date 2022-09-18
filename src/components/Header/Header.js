@@ -103,22 +103,20 @@ const {openModel,model}=React.useContext(ContextProvider)
       </div>
 
       <div
-        className="absolute hidden lg:hidde n  xl:inline-block z-30 xl:left-[0px]  
+        className="absolute hidden lg:hidde n  xl:inline-block z-30 xl:left-[20px]  
        top-[218px] xl:top-[218px] lg:top-[91px] lg:left-[50px]"
       >
-        <img src={images.gh1} className="w-[340px] lg:inline-block lg:w-[80%] xl:w-[250px] " />
+        <img src={images.gh1} className="w-[340px] lg:inline-block lg:w-[80%] xl:w-[270px]" />
       </div>
       <div
         className="absolute z-30  hidden sm:hidden  
         md:hidden xl:inline-block lg:hidden top-[260px] xl:top-[160px] w-[60%] 
-        xl:right-[-19px]
+        xl:right-[19px]
          xl:w-[15%] 
          lg:w-[200px]
          lg:top-[100px]
-         lg:right-[120px]
-         
-         "
-      >
+         lg:right-[120px]         
+         ">
         <img
           src={images.gh2}
           className="w-[340px] lg:rotate-[7deg]  "

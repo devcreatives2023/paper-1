@@ -3,8 +3,8 @@ import { data, icons } from "../../contstants";
 import { motion } from "framer-motion";
 const Projects = () => {
   return (
-    <div className="flex items-center justify-center mb-[120px] xl:mb-20  lg:mb-28 md:mt-40 ">
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 xl:mt-[-30px] lg:mt-[-110px] mt-[-80px] xl:grid-cols-3 gap-10">
+    <div className="flex items-center justify-center mb-[180px] xl:mb-20   lg:mb-28 md:mt-40 ">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 xl:mt-[-80px] lg:mt-[-280px] mt-[-80px] xl:grid-cols-3 gap-10">
         {data.projects.map((item, index) => {
           return (
             <div

@@ -1,12 +1,11 @@
 import React from "react";
 import { ContextProvider } from "../../context/Context";
 import { motion, AnimatePresence } from "framer-motion";
-import { Waves } from "../../components";
 import { icons, images } from "../../contstants";
 const backdrop = {
   visible: {
     opacity: 1,
-    x: 0,
+    y: 0,
     transition: {
       type: "spring",
       mass: 0.4,
@@ -15,14 +14,32 @@ const backdrop = {
       staggerChildren: 0.4,
     },
   },
-  hidden: { opacity: 0 },
+  hidden: {
+    opacity: 0,
+    y: -100,
+    transition: {
+      type: "spring",
+      mass: 0.4,
+      damping: 8,
+      when: "beforChildren",
+      staggerChildren: 0.4,
+    },
+  },
 };
 
 const modal = {
-  hidden: { opacity: -100, y: 0 },
   visible: {
     opacity: 1,
     y: "200px",
+    transition: {
+      type: "string",
+      ease: "easeInOut",
+      duration: "2",
+    },
+  },
+  hidden: {
+    opacity: 0,
+    y: "-200px",
     transition: {
       type: "string",
       ease: "easeInOut",
@@ -43,7 +60,10 @@ const Model = () => {
             variants={backdrop}
             inital="hidden"
             animate="visible"
-            exit="hidden"
+            // exit="hidden"
+            exit={{
+              y:-100,opacity:0
+            }}
           >
             <motion.div
               className="bg-[#eee] rounded-[20px] fixed left-0 right-0 w-[900px]
@@ -53,9 +73,14 @@ const Model = () => {
               inital="hidden"
               animate="visible"
               variants={modal}
+              // exit="hidden"
+              exit={{
+                y:-100,opacity:0
+              }}
             >
-                {/* <div className="bg-purple w-[100px] h-[100px] rounded-full absolute -left-10 top-0 z-0"></div> */}
-              <motion.form>
+              {/* <div className="bg-purple w-[100px] h-[100px] rounded-full absolute -left-10 top-0 z-0"></div> */}
+              <motion.form
+              >
                 <div className="flex justify-around h-[50vh]">
                   <h1 className=" text-h1 text-center">ContactInfo</h1>
                   <motion.button
