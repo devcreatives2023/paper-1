@@ -10,18 +10,16 @@ body {
 }
 
 ::-webkit-scrollbar {
-  background-color: rgba(128, 0, 128, 0.775);
-  border-radius: 40px;
+  background-color:purple;
+  border-radius:40px;
   width: 7px;
 }
 
 ::-webkit-scrollbar-button {
-  background-color: #eee;
-  border-radius: 30px;
+  background-color: gray;
+  border-radius: 40px;
 }
-::-webkit-scrollbar-corner{
-    /* width: 30px; */
-}
+
 
 @media screen and (max-width: 1024px) {
   body {

@@ -3,13 +3,9 @@ import { images } from "../../contstants";
 import { motion } from "framer-motion";
 const Clients = () => {
   return (
-    <div className="text-center leading-10  mt-[100px] xl:mt-0 lg:mt-0 h-[55vh] xl:h-[60vh]">
-      <motion.div
+    <div className="text-center leading-10  mt-[100px] xl:mt-0 lg:mt[60px] h-[55vh] xl:h-[60vh]">
+      <div
         className="flex flex-col justify-center items-center"
-        initial={{ y: 100, opacity: 0.6 }}
-        whileInView={{ y: 0, opacity: 1 }}
-        exit={{ y: 0 }}
-        transition={{ duration: 1, type: "tween" }}
       >
         <h1 className="text-[25px] lg:text-[2rem] xl:text-h1 font-title  tracking-wider ">
           Clients
@@ -18,7 +14,7 @@ const Clients = () => {
           Leo vel fringilla est ullamcorper. Tincidunt eget nullam non nisi.
         </p>
         <div className="w-[60px] mt-2 ml-[10px] bg-lightpurple h-[1px]" />
-      </motion.div>
+      </div>
 
       <div className="flex justify-center items-center">
         <motion.div

@@ -2,9 +2,10 @@ import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Blog, Contact, Home } from "./pages";
 import { RiseLoader } from "react-spinners";
+import { Model } from "./components";
+import Context from "./context/Context";
 const App = () => {
   const [loading, setLoading] = React.useState(false);
-
   React.useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -21,21 +22,22 @@ const App = () => {
             margin="30%%"
             size={40}
             speedMultiplier={1}
-
-          />
+            />
         </div>
       ) : (
-        <div className="h-screen bg-white">
+        <Context className="h-screen bg-white">
+          <Model />
           <BrowserRouter>
             <Routes>
               <Route path="/">
                 <Route index element={<Home />} />
-                <Route  path='blog' element={<Blog />}  />
-                <Route  path='contact' element={<Contact />}  />
+                <Route path="blog" element={<Blog />} />
+                <Route path="contact" element={<Contact />} />
               </Route>
             </Routes>
+
           </BrowserRouter>
-        </div>
+        </Context>
       )}
     </>
   );

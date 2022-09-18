@@ -14,9 +14,10 @@ module.exports = {
       },
       backgroundColor: {
         purple: "#7329ac",
-        lightpuقple: "#9445c2",
+        lightpuple: "#9445c2",
         btn: "#ef4b6c",
         work: "rgb(248, 248, 248)",
+        modelbg:"rgba(0, 0, 0, 0.5)"
       },
       fontSize: {
         xl: "6rem",

@@ -3,7 +3,7 @@ import { images } from "../../contstants";
 import { motion } from "framer-motion";
 const Works = () => {
   return (
-    <div className="mt-[50px]  pb-20 xl:pb-0 p-4">
+    <div className="mt-[50px] xl:mt-[10px] md:mt-[-100px] lg:mt-[140px] pb-20 xl:pb-0 p-4">
       <motion.div
         initial={{ y: -5, opacity: 0.6 }}
         whileInView={{ y: 0, opacity: 1 }}

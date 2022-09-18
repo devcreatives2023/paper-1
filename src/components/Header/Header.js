@@ -3,9 +3,12 @@ import { Link } from "react-router-dom";
 import { Waves } from "../../components";
 import { motion } from "framer-motion";
 import { images, icons } from "../../contstants";
+import { ContextProvider } from "../../context/Context";
+
 const Header = ({ title, text, btn }) => {
+const {openModel,model}=React.useContext(ContextProvider)
   return (
-    <header className="h-[45vh] md:h-[40vh] xl:h-section lg:h-section">
+    <header className="h-[45vh] md:h-[30vh] xl:h-section lg:h-section">
       <Waves deg="360deg" />
       <div className="absolute  z-20 left-0 right-0">
         <motion.div
@@ -17,6 +20,7 @@ const Header = ({ title, text, btn }) => {
         >
           TECHBOOM <icons.GiSonicBoom />
         </motion.div>
+
         <ul className="grid xl:grid-cols-3  text-center grid-cols-3 text-[#eee] absolute top-[35px] xl:top-12 right-5 xl:right-[350px] gap-2 xl:gap-6">
           <motion.li
             initial={{ y: -70, opacity: 0 }}
@@ -34,7 +38,7 @@ const Header = ({ title, text, btn }) => {
             transition={{ type: "spring", duration: 3, delay: "1.2" }}
             className=" hover:text-white shadow-xl text-lg"
           >
-            <Link to="blog"> Blog </Link>
+            <Link to="/blog"> Blog </Link>
           </motion.li>
           <motion.li
             initial={{ y: -70, opacity: 0 }}
@@ -43,11 +47,15 @@ const Header = ({ title, text, btn }) => {
             transition={{ type: "spring", duration: 4, delay: "1.3" }}
             className=" hover:text-white shadow-xl text-lg"
           >
-            <Link to="contact"> Contact </Link>
+            <button onClick={openModel} className=' border-none  outline-none'>{model?<icons.MdConnectWithoutContact fontSize={30} /> :"Contact"}</button>
+             {/* <Link to="/contact">Contact</Link> */}
           </motion.li>
         </ul>
-        <div className="mt-[130px] xl:mt-[150px] lg:mt-[150px]  md:mt-[90px] text-center
-         text-white p-4">
+        
+        <div
+          className="mt-[130px] xl:mt-[150px] lg:mt-[150px]  md:mt-[90px] text-center
+         text-white p-4"
+        >
           <h1
             style={{ textShadow: "1px 3px 3px gray" }}
             className=" text-[2rem] xl:text-xl
@@ -93,14 +101,14 @@ const Header = ({ title, text, btn }) => {
       </div>
 
       <div
-        className="absolute hidden lg:inline-block  xl:inline-block z-30 xl:left-[30px] -left-[10px] 
+        className="absolute hidden lg:hidden  xl:inline-block z-30 xl:left-[30px] -left-[10px] 
        top-[218px] xl:top-[218px] lg:top-[91px] lg:left-[50px]"
       >
-        <img src={images.gh1}  className='w-[340px] lg:inline-block '/>
+        <img src={images.gh1} className="w-[340px] lg:inline-block lg:w-[80%] xl:w-[350px] " />
       </div>
       <div
         className="absolute z-30 right-[40px] hidden sm:hidden  
-        md:hidden xl:inline-block lg:inline-block top-[260px] xl:top-[160px] w-[60%] 
+        md:hidden xl:inline-block lg:hidden top-[260px] xl:top-[160px] w-[60%] 
         xl:right-[70px]
          xl:w-[15%] 
          lg:w-[200px]
@@ -109,11 +117,13 @@ const Header = ({ title, text, btn }) => {
          
          "
       >
-        <img src={images.gh2}   className='w-[340px] lg:inline-block lg:rotate-[7deg]  ' />
+        <img
+          src={images.gh2}
+          className="w-[340px] lg:rotate-[7deg]  "
+        />
       </div>
     </header>
-
-);
+  );
 };
 
 export default Header;
