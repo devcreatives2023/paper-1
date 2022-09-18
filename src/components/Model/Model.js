@@ -63,7 +63,7 @@ const Model = () => {
           >
             <motion.div
               className="bg-white  rounded-[20px]
-              fixed left-2 xl:left-0 lg:left-0 xl:right-0 lg:right-0 w-[90%] xl:w-[60%] lg:w-[60%]
+              fixed left-4 md:left-8 xl:left-0 lg:left-0 xl:right-0 lg:right-0 w-[90%] xl:w-[60%] lg:w-[60%]
               top-0 m-auto
               z-10
              flex flex-col
