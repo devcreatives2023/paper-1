@@ -28,6 +28,9 @@ import p2 from "./images/projects/p2.jpg";
 import p3 from "./images/projects/p3.jpg";
 import p4 from "./images/projects/p4.jpg";
 import p5 from "./images/projects/p5.jpg";
+// contact
+import c1 from "./images/contact.png";
+
 export default {
   gh1,
   gh2,
@@ -54,4 +57,5 @@ export default {
   p3,
   p4,
   p5,
+  c1,
 };

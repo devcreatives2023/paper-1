@@ -21,7 +21,8 @@ const {openModel,model}=React.useContext(ContextProvider)
           TECHBOOM <icons.GiSonicBoom />
         </motion.div>
 
-        <ul className="grid xl:grid-cols-3  text-center grid-cols-3 text-[#eee] absolute top-[35px] xl:top-12 right-5 xl:right-[350px] gap-2 xl:gap-6">
+        <ul className="grid xl:grid-cols-3  text-center grid-cols-3
+         text-[#eee] absolute top-[35px] xl:top-12 right-5 xl:right-[350px] xll:right-[300px] gap-2 xl:gap-6">
           <motion.li
             initial={{ y: -70, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
@@ -60,7 +61,7 @@ const {openModel,model}=React.useContext(ContextProvider)
           <h1
             style={{ textShadow: "1px 3px 3px gray" }}
             className=" text-[2rem] xl:text-xl
-            lg:text-[3rem]
+            lg:text-[5rem]
             text-black lg:text-white md:text-white xl:text-white  
             font-bold capitalize  flex items-center justify-center font-title 
             tracking-wider xl:tracking-widest "
@@ -91,7 +92,7 @@ const {openModel,model}=React.useContext(ContextProvider)
                 background: "#7329ac",
               }}
               className="xl:text-[22px] rounded-[30px] hover:bg-lightpurple bg-purple mt-[10px] md:mt-[17px] xl:mt-16 
-            px-[20px] xl:px-[75px] p-2 font-semibold  transition-all duration-[0.6s]"
+            px-[20px] xl:px-[75px] lg:px-[50px] p-2 font-semibold  transition-all duration-[0.6s]"
               style={{ boxShadow: "inset 0px 0px 1px 2px  white" }}
             >
               Let's Talk

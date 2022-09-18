@@ -1,5 +1,10 @@
 import { GiSonicBoom, GiCrossMark } from "react-icons/gi";
-import { BsInstagram, BsBehance, BsEmojiSmile } from "react-icons/bs";
+import {
+  BsInstagram,
+  BsBehance,
+  BsEmojiSmile,
+  BsFillTelephoneOutboundFill,
+} from "react-icons/bs";
 import {
   MdOutlineSportsVolleyball,
   MdConnectWithoutContact,
@@ -7,6 +12,7 @@ import {
 } from "react-icons/md";
 import { FcAddImage } from "react-icons/fc";
 import { IoMdSend } from "react-icons/io";
+import { FaLongArrowAltRight } from "react-icons/fa";
 export default {
   GiSonicBoom,
   BsInstagram,
@@ -18,4 +24,6 @@ export default {
   IoMdSend,
   MdMessage,
   BsEmojiSmile,
+  FaLongArrowAltRight,
+  BsFillTelephoneOutboundFill,
 };

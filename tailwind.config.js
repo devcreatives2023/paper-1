@@ -17,7 +17,7 @@ module.exports = {
         lightpuple: "#9445c2",
         btn: "#ef4b6c",
         work: "rgb(248, 248, 248)",
-        modelbg:"rgba(0, 0, 0, 0.5)"
+        modelbg: "rgba(0, 0, 0, 0.5)",
       },
       fontSize: {
         xl: "6rem",
@@ -35,7 +35,7 @@ module.exports = {
         sm: "665px",
         md: "768px",
         lg: "1024px",
-        xll:"1308px",
+        xll: "1308px",
         xl: "1502px",
         "2xl": "1536px",
       },
