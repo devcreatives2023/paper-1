@@ -9,7 +9,7 @@ const Footer = () => {
         <Waves deg="180deg" />
       </div>
       <div className="flex justify-center left-0 right-0 xl:top-[200px] items-center xl:mt-10 md:top-[150px] absolute">
-        <div className=" absolute top-0">
+        <div className=" absolute -top-10 shadow-xl p-2">
           <motion.h1
             style={{ textShadow: "1px 3px 3px gray" }}
             initial={{ y: -60, opacity: 0.6 }}
@@ -17,7 +17,8 @@ const Footer = () => {
             exit={{ y: 0 }}
             transition={{duration:3,type:"spring"}}
 
-            className="text-[1rem] xl:text-[3.5rem] lg:text-[3rem] md:text-[2rem] text-center capitalize font-title xl:shadow-lg mt-[0px]  xl:-mt-[10px] xl:text-white lg:text-white "
+            className="text-[1rem] xl:text-[3.5rem] lg:text-[3rem] md:text-[2rem]
+             text-center capitalize font-title  mt-[0px]  xl:-mt-[10px] xl:text-white lg:text-white "
           >
             Intersted In working with us ?
           </motion.h1>
