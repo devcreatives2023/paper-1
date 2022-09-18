@@ -75,7 +75,7 @@ const Model = () => {
               <div>
                 <h1
                   style={{ textShadow: "1px 3px 3px gray" }}
-                  className=" text-2xl xl:text-h1 text-center font-bold  mb-4 font-title tracking-wider "
+                  className=" text-2xl xl:text-h1 text-left xl:text-center xll:text-center md:text-center lg:text-center font-bold  mb-4 font-title tracking-wider "
                 >
                   Contact with us
                 </h1>
@@ -88,9 +88,10 @@ const Model = () => {
               </div>
               <>
                 <div className=" grid grid-cols-1 xl:grid-cols-2 lg:grid-cols-2 gap-2  ">
-                  
-                  <form className=" rounded-[30px]  px-8 pt-6 pb-8 mb-4 grid-cols-2
-                   xl:grid-cols-1 lg:grid-cols-1 ">
+                  <form
+                    className=" rounded-[30px]  px-8 pt-6 pb-8 mb-4 grid-cols-2
+                   xl:grid-cols-1 lg:grid-cols-1 "
+                  >
                     <div className="mb-4">
                       <label
                         className="block bg-transparent text-lg text-purple font-semibold font-title tracking-wider  "
@@ -155,8 +156,14 @@ const Model = () => {
                   </form>
 
                   <div className=" grid-cols-1 mt-[-40px] -mr-10 hidden xl:inline-block lg:inline-block">
-                    <div className="absolute right-20 top-[190px] z-50 bg-purple text-white w-[47px] h-[47px] rounded-full flex items-center justify-center text-2xl">   <icons.BsInstagram /></div>
-                    <div className="absolute right-[120px] top-[90px] z-50 bg-[pink] text-white w-[37px] h-[37px] rounded-full flex items-center justify-center text-lg">   <icons.BsFillTelephoneOutboundFill /></div>
+                    <div className="absolute right-20 top-[190px] z-50 bg-purple text-white w-[47px] h-[47px] rounded-full flex items-center justify-center text-2xl">
+                      {" "}
+                      <icons.BsInstagram />
+                    </div>
+                    <div className="absolute right-[120px] top-[90px] z-50 bg-[pink] text-white w-[37px] h-[37px] rounded-full flex items-center justify-center text-lg">
+                      {" "}
+                      <icons.BsFillTelephoneOutboundFill />
+                    </div>
                     <img src={images.c1} className="rounded-[40px]" />
                   </div>
                 </div>
