@@ -4,6 +4,7 @@ import { Blog, Contact, Home } from "./pages";
 import { RiseLoader } from "react-spinners";
 import { Model } from "./components";
 import Context from "./context/Context";
+import { AnimatePresence } from "framer-motion";
 const App = () => {
   const [loading, setLoading] = React.useState(false);
   React.useEffect(() => {
@@ -22,22 +23,23 @@ const App = () => {
             margin="30%%"
             size={40}
             speedMultiplier={1}
-            />
+          />
         </div>
       ) : (
-        <Context className="h-screen bg-white">
-          <Model />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/">
-                <Route index element={<Home />} />
-                <Route path="blog" element={<Blog />} />
-                <Route path="contact" element={<Contact />} />
-              </Route>
-            </Routes>
-
-          </BrowserRouter>
-        </Context>
+        <AnimatePresence exitBeforeEnter>
+          <Context className="h-screen bg-white">
+            <Model />
+            <BrowserRouter>
+              <Routes>
+                <Route path="/">
+                  <Route index element={<Home />} />
+                  <Route path="blog" element={<Blog />} />
+                  <Route path="contact" element={<Contact />} />
+                </Route>
+              </Routes>
+            </BrowserRouter>
+          </Context>
+        </AnimatePresence>
       )}
     </>
   );

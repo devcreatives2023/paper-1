@@ -1,9 +1,9 @@
 import React from "react";
 import { Clients, Footer, Header, Services, Works } from "../../components";
-
+import { motion } from "framer-motion";
 const Home = ({ openModel }) => {
   return (
-    <div>
+    <motion.div>
       <Header
         open={openModel}
         title=" We Are Techboom"
@@ -15,7 +15,7 @@ const Home = ({ openModel }) => {
       <Clients />
       <Works />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
