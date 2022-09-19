@@ -23,19 +23,19 @@ const Projects = () => {
 
               <div className="p-[1rem] cursor-pointer">
                 <h3 className=" font-semibold text-lg">{item.name}</h3>
-                <div className="grid grid-cols-5 mt-2 gap-10">
+                <div className="grid grid-cols-5 mt-2 gap-12">
                   <div className=" col-span-1 border borde-4 rounded-full w-[57px] h-[57px] ">
                     <img
                       src={item.developerimg}
                       className=" rounded-[50%] w-[57px] h-[57px] object-cover"
                     />
                   </div>
-                  <div className=" col-span-3 mt-2">
+                  <div className=" col-span-3 mt-2 lg:ml-2">
                     <h5 className=" font-semibold text-lg">{item.devname}</h5>
                     <p className="text-[gray] text-sm"> {item.date}</p>
                   </div>
                   <div
-                    className="col-span-1  mt-5 
+                    className="col-span-1  mt-5 -ml-4 lg:ml-[-12px]
                   flex justify-center items-center  w-[35px] h-[35px]
                    shadow-main rounded-[50%] p-1 bg-white"
                   >

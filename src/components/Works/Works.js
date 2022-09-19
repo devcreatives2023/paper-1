@@ -35,7 +35,7 @@ const Works = () => {
             </h1>
             <h3 className=" capitalize mt-5"> Development</h3>
             <button className=" font-semibold rounded-[20px] shadow-secondary 
-             bg-white p-2 xl:p-3 xl:px-10 mt-5">
+             bg-white p-2 xl:p-3 xl:px-10 mt-10">
               view project
             </button>
           </div>
@@ -59,7 +59,8 @@ const Works = () => {
               Lorem Ipsum
             </h1>
             <h3 className=" capitalize mt-5"> Development</h3>
-            <button className=" font-semibold rounded-[20px] shadow-secondary  bg-white  p-2 xl:p-3 xl:px-10 mt-5">
+            <button className=" font-semibold rounded-[20px] shadow-secondary 
+             bg-white  p-2 xl:p-3 xl:px-10  mt-10">
               view project
             </button>
           </div>
@@ -80,7 +81,7 @@ const Works = () => {
             <h3 className=" capitalize mt-5"> Development</h3>
             <button
               className=" font-semibold rounded-[20px] shadow-secondary
-              bg-white xl:p-3 p-2 x:px-10 mt-5"
+              bg-white xl:p-3 p-2 x:px-10  mt-10"
             >
               view project
             </button>
