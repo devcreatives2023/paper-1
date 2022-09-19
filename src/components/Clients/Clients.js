@@ -24,26 +24,26 @@ const Clients = () => {
         >
           <div className=" row-span-4">
             <div className="row-span-2 mt-7  bg-[#eee]  shadow- justify-center g   flex items-center rounded-[20px]  h-[80px]  xl:h-[100px] lg:h-[100px] md:h-[90px]">
-              <img src={images.logo3} className='w-[150px] h-[150px] object-cover flex justify-center items-center' />
+              <img src={images.logo3} className='w-[100px] h-[100x] lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] object-cover flex justify-center items-center' />
             </div>
             <div className="row-span-2 mt-7  bg-[#eee] h-[80px]  justify-center  xl:h-[100px] lg:h-[100px] md:h-[90px] shadow-lg flex items-center rounded-[20px] ">
-              <img src={images.logo3} className='w-[150px] h-[150px] object-cover flex justify-center items-center' />
+              <img src={images.logo3} className='w-[100px] h-[100x] lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] object-cover flex justify-center items-center' />
             </div>
           </div>
           <div className="row-span-4">
             <div className="row-span-2 mt-7 bg-[#eee] h-[80px]   justify-center xl:h-[100px] lg:h-[100px] md:h-[90px]  shadow-lg flex items-center rounded-[20px] ">
-              <img src={images.logo3} className='w-[150px] h-[150px] object-cover flex justify-center items-center' />
+              <img src={images.logo3} className='w-[100px] h-[100x] lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] object-cover flex justify-center items-center' />
             </div>
             <div className="row-span-2 mt-7 bg-[#eee] h-[80px]   justify-center xl:h-[100px] lg:h-[100px] md:h-[90px]  shadow-lg flex items-center rounded-[20px] ">
-              <img src={images.logo3} className='w-[150px] h-[150px] object-cover flex justify-center items-center' />
+              <img src={images.logo3} className='w-[100px] h-[100x] lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] object-cover flex justify-center items-center' />
             </div>
           </div>
           <div className="row-span-4">
             <div className="row-span-2 mt-7 bg-[#eee] h-[80px]   justify-center xl:h-[100px] lg:h-[100px] md:h-[90px] shadow-lg flex items-center rounded-[20px] ">
-              <img src={images.logo3} className='w-[150px] h-[150px] object-cover flex justify-center items-center' />
+              <img src={images.logo3} className='w-[100px] h-[100x] lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] object-cover flex justify-center items-center' />
             </div>
             <div className="row-span-2 mt-7  bg-[#eee] h-[80px]  justify-center   xl:h-[100px] lg:h-[100px] md:h-[90px]  shadow-lg flex items-center rounded-[20px] ">
-              <img src={images.logo3} className='w-[150px] h-[150px] object-cover flex justify-center items-center' />
+              <img src={images.logo3} className='w-[100px] h-[100x] lg:w-[120px] lg:h-[120px] md:w-[100px] md:h-[100px] xl:w-[150px] xl:h-[150px] object-cover flex justify-center items-center' />
             </div>
           </div>
         </motion.div>
